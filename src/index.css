@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: #c6ebbe;
+  --secondary: #2c6e49;
+  --text: #979797
+  --btn-primary :#2BB57333
+}
