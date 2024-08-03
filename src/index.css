@@ -8,6 +8,14 @@
   --text: #979797
   --btn-primary :#2BB57333
 }
+
+body {
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
 .container-box {
   padding-left: 7rem;
   padding-right: 7rem;
@@ -15,14 +23,7 @@
 
 nav .active-link {
   border-bottom: 5px solid var(--primary);
-  color: white ;
+  color: var(--secondary)  !important;
  
 }
 
-.home {
-  background-image: url("assets/images/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
