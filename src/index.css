@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --primary: #c6ebbe;
-  --secondary: #2c6e49;
+  --primary: #27265F;
+  --secondary: ##2BB573;
   --text: #979797
   --btn-primary :#2BB57333
+}
+.container-box {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+nav .active-link {
+  border-bottom: 5px solid var(--primary);
+  color: white ;
+ 
+}
+
+.home {
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }

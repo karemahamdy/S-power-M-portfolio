@@ -1,18 +1,24 @@
+
 import './App.css'
-import targetIcon from "./assets/images/target (1).svg";
+// import targetIcon from "./assets/images/target (1).svg";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
+import Home from './pages/Home/Home.jsx';
+
 
 function App() {
-
   return (
-    <>
-      
-      <p className="read-the-docs text-center bg-pink-600">
-        Click on the Vite and React logos to learn more
-      </p>
-      <button className='bg-[#2BB57333]'>test</button>
-      <img src={targetIcon}/>
-    </>
-  )
+    <BrowserRouter>
+      <div className=''>
+    
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
