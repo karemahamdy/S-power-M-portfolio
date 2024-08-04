@@ -6,6 +6,7 @@ import Clients from "../../pages/Home/Clients.jsx"
 
 function Home () {
   return (
+    <>
     <div className='container-box grid gap-6'>
       <div className='header'></div>
         <Nav/>
@@ -13,9 +14,10 @@ function Home () {
         <Intro/>
         <hr></hr>
         <Clients/>
-        <Contact/>
         <hr></hr>
     </div>
+        <Contact/>
+  </>
   )
 }
 export default Home

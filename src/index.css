@@ -28,14 +28,17 @@
  background-color: var(--btn-primary);
  color: var(--secondary);
 }
-
+.btn-secondary {
+  background-color: var(--primary);
+  color: white;
+ }
 body,
 .bg {
   background-image: url("assets/images/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 85vh;
 }
 .container-box {
   padding-left: 7rem;
