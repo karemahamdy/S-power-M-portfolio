@@ -4,12 +4,12 @@ import Intro from "../../pages/Home/Intro.jsx"
 import Contact from "../../pages/Home/Contact.jsx"
 import Clients from "../../pages/Home/Clients.jsx"
 import Footer from "../../pages/Home/Footer.jsx"
-import Header from "../../components/Header"
+
 
 function Home () {
   return (
     <>
-        <Header/>
+    
     <div className='container-box grid gap-6'>
         <Nav/>
         <Hero/>

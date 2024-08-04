@@ -1,8 +1,10 @@
-import Header from "../../components/Header"
+
+import BackGround from "../../components/Backkground"
 function About () {
   return (
     <>
-    <Header/>
+    <BackGround/>
+  
   <h1>hello</h1>
   </>
   )

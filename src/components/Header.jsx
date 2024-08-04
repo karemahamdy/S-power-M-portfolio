@@ -3,7 +3,7 @@ import IntroImage from "../assets/images/Layer 1.png";
 const Header = () => {
   return (
     <header className="w-full">
-      <div className="bg-gray-800 h-2"></div>
+    
       <div className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
