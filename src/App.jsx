@@ -1,12 +1,10 @@
-
 import './App.css'
-// import targetIcon from "./assets/images/target (1).svg";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import Home from './pages/Home/Home.jsx';
 import About from "./pages/About/About.jsx"
 import Header from "./components/Header.jsx"
 import Contact from './pages/Contact/Contact.jsx';
-
+import Services from './pages/Services/Services.jsx';
 
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </div>
     </BrowserRouter>
