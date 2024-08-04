@@ -4,9 +4,28 @@
 
 :root {
   --primary: #27265F;
-  --secondary: ##2BB573;
-  --text: #979797
-  --btn-primary :#2BB57333
+  --secondary: #2BB573;
+  --text: #979797;
+  --btn-primary : rgba(43, 181, 115, 0.2)
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+.btn-primary {
+ background-color: var(--btn-primary);
+ color: var(--secondary);
 }
 
 body {

@@ -1,10 +1,11 @@
 import Nav from '../../components/Nav.jsx';
+import Hero from "../../pages/Home/Hero.jsx"
 function Home () {
   return (
-    <div className=''>
+    <div className='container-box'>
       <div className='header'></div>
         <Nav/>
-    <h1> hello </h1>
+        <Hero/>
     </div>
   )
 }
