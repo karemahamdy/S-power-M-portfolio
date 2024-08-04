@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HomeImage from "../../assets/images/home-image.gif";
 import PrimaryButton from "../../components/PrimaryBtn";
 
@@ -11,10 +11,8 @@ function Hero() {
           WE ARE THINKING BEYOND <span className="text-secondary">TODAY</span>
         </h1>
         <p className="text-primary text-xl">Why would you choose to sell for just some decades; if you have the chance to build a brand name that can last long for centuries?</p>
-        
-
+      
           <PrimaryButton>More Details</PrimaryButton> 
-
       </div>
       <div className=' w-[90%]'>
         <img src={HomeImage} alt="home" />
