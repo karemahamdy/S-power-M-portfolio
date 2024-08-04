@@ -6,7 +6,7 @@ function Footer () {
 <footer className="bg-secondary">
     <div className="flex flex-row justify-between p-20">
     <div className="flex flex-col space-y-3 font-medium">
-        <img src={IntroImage} alt="intro" />
+        <img src={IntroImage} alt="intro" className="w-[70%]"/>
         <p className="text-white">All rights Reserved | 2023</p>
     </div>
     
