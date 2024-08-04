@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ClientFilter = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const newLocal = '';
+
   const filters = [
     { name: 'All', flag: '🔻' },
     { name: 'KSA', flag: '🔻'},
