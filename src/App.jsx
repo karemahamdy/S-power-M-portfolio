@@ -5,6 +5,7 @@ import About from "./pages/About/About.jsx"
 import Header from "./components/Header.jsx"
 import Contact from './pages/Contact/Contact.jsx';
 import Services from './pages/Services/Services.jsx';
+import PageNotFound from "./components/PageNotFound.jsx"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div className=''>
       <Header/>
         <Routes>
+        <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

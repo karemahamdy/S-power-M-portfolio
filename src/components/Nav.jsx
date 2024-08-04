@@ -38,9 +38,7 @@ function Nav() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/portfolio" className={({ isActive }) => `block py-2 px-3 md:p-0 rounded text-[var(--primary)] ${isActive ? 'active-link' : ''}`}>
-                  Portfolio
-                </NavLink>
+                
               </li>
             </ul>
           </div>
