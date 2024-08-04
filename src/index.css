@@ -32,7 +32,7 @@
   background-color: var(--primary);
   color: white;
  }
-body,
+
 .bg {
   background-image: url("assets/images/background.png");
   background-size: cover;
@@ -51,3 +51,10 @@ nav .active-link {
  
 }
 
+.background {
+  background-image: url("assets/images/Rectangle 55.png") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}

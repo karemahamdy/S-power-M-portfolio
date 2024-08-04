@@ -1,10 +1,11 @@
 import BackGround from "../../components/Background"
-import Info from "../About/Info"
+import Contact from "../../pages/Home/Contact.jsx"
 function About () {
   return (
     <>
-    <BackGround>About Us</BackGround>
-  <Info/>
+    <BackGround>Contact Us</BackGround>
+    
+    <Contact/>
   
   </>
   )
