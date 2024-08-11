@@ -4,7 +4,7 @@ import Intro from "../../pages/Home/Intro.jsx"
 import Contact from "../../pages/Home/Contact.jsx"
 import Clients from "../../pages/Home/Clients.jsx"
 import Footer from "../../pages/Home/Footer.jsx"
-
+import ServicesSwiper from "../../components/Swipper.jsx"
 
 function Home () {
   return (
@@ -15,6 +15,7 @@ function Home () {
         <Hero/>
         <Intro/>
         <hr></hr>
+      
         <Clients/>
         <hr></hr>
     </div>

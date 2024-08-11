@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter>
       <div className=''>
       <Header/>
+      
         <Routes>
         <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<Home />} />
