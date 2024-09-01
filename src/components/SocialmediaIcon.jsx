@@ -1,4 +1,5 @@
-function SocialmediaIcons() {
+// eslint-disable-next-line react/prop-types
+function SocialmediaIcons({className}) {
   return (
     
     <>
@@ -9,8 +10,8 @@ function SocialmediaIcons() {
         </svg>
       </div>
       <div className="flex flex-col">
-        <p className="text-white">phone number</p>
-        <span className="text-sm text-white font-bold">+2010 26 75 48 31</span>
+        <p className={className}>phone number</p>
+        <span className={`${className} text-sm font-bold`}>+2010 26 75 48 31</span>
       </div>
     </div>
     <div className="flex items-center">
@@ -21,8 +22,8 @@ function SocialmediaIcons() {
         </svg>
       </div>
       <div className="flex flex-col">
-        <p className="text-white">Email</p>
-        <span className="text-sm text-white font-bold">info@spowerm-corp.com</span>
+        <p className={className}>Email</p>
+        <span className={`${className} text-sm font-bold`}>info@spowerm-corp.com</span>
       </div>
     </div>
     <div className="flex items-center">
@@ -32,8 +33,8 @@ function SocialmediaIcons() {
         </svg>
       </div>
       <div className="flex flex-col">
-        <p className="text-white">Location</p>
-        <span className="text-sm text-white font-bold">To be Added</span>
+        <p className={className}>Location</p>
+        <span className={`${className} text-sm font-bold`}>To be Added</span>
       </div>
   </div>
   

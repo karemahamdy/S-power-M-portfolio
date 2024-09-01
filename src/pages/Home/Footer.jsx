@@ -44,8 +44,8 @@ function Footer() {
 
           </ul>
           <div className="flex flex-col space-y-6">
-          <SocialmediaIcons />
-</div>
+          <SocialmediaIcons className="text-white" />
+          </div>
         </div>
 
       </div>
