@@ -6,22 +6,25 @@ import Clients from "../../pages/Home/Clients.jsx"
 import Footer from "../../pages/Home/Footer.jsx"
 // import ServicesSwiper from "../../components/Swipper.jsx"
 
-function Home () {
+function Home() {
   return (
     <>
-    
-    <div className='container-box grid gap-6'>
-        <Nav/>
-        <Hero/>
-        <Intro/>
+
+      <div className='bg'>
+        <Nav />
+        <Hero />
+        </div>
+
+      <div className='container-box grid gap-6'>
+        <Intro />
         <hr></hr>
-      
-        <Clients/>
+        <Clients />
         <hr></hr>
-    </div>
-        <Contact/>
-        <Footer/>
-  </>
+      </div>
+
+      <Contact />
+      <Footer />
+    </>
   )
 }
 export default Home

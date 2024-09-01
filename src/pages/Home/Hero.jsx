@@ -5,7 +5,7 @@ import PrimaryButton from "../../components/PrimaryBtn";
 function Hero() {
   return (
 <>
-    <div className='flex flex-row mt-10 '>
+    <div className="flex flex-row mt-10 container-box">
       <div className='space-y-6  w-[50%] mt-24'>
         <h1 className="text-primary text-4xl font-bold">
           WE ARE THINKING BEYOND <span className="text-secondary">TODAY</span>
