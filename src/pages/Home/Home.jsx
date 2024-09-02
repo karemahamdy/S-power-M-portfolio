@@ -1,10 +1,11 @@
 import Nav from '../../components/Nav.jsx';
 import Hero from "../../pages/Home/Hero.jsx"
 import Intro from "../../pages/Home/Intro.jsx"
+import Portfolio from "../Home/Portfolio.jsx"
 import Contact from "../../pages/Home/Contact.jsx"
 import Clients from "../../pages/Home/Clients.jsx"
 import Footer from "../../pages/Home/Footer.jsx"
-import CarouselSize from "../../components/Swipper.jsx"
+
 
 function Home() {
   return (
@@ -17,7 +18,8 @@ function Home() {
       <div className='container-box grid gap-6'>
         <Intro />
         <hr></hr>
-        <CarouselSize/>
+        <Portfolio/>
+        <hr></hr>
         <Clients />
         <hr></hr>
       </div>
