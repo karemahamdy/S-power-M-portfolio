@@ -4,12 +4,12 @@ import Intro from "../../pages/Home/Intro.jsx"
 import Contact from "../../pages/Home/Contact.jsx"
 import Clients from "../../pages/Home/Clients.jsx"
 import Footer from "../../pages/Home/Footer.jsx"
-// import ServicesSwiper from "../../components/Swipper.jsx"
+import CarouselSize from "../../components/Swipper.jsx"
 
 function Home() {
   return (
     <>
-
+<CarouselSize/>
       <div className='bg'>
         <Nav />
         <Hero />

@@ -6,14 +6,14 @@ import Header from "./components/Header.jsx"
 import Contact from './pages/Contact/Contact.jsx';
 import Services from './pages/Services/Services.jsx';
 import PageNotFound from "./components/PageNotFound.jsx"
-import ButtonDemo from "./components/Swipper.jsx"
+
 
 function App() {
   return (
     <BrowserRouter>
       <div className=''>
       <Header/>
-      <ButtonDemo/>
+    
         <Routes>
         <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<Home />} />
