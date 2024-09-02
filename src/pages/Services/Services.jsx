@@ -1,5 +1,6 @@
 import BackGround from "../../components/Background"
 import CorporateIdentityCard from "./DataService"
+import Footer from "../../pages/Home/Footer.jsx"
 function Services() {
   return (
     <>
@@ -28,8 +29,8 @@ function Services() {
           text="Presenting your brand/business through offline advertising should serve the big image of your business/ brand as well. So, we utilize the principles of branding and creativity to deliver a perfectly tailored image of how you want."
         />
 
-
       </div>
+      <Footer/>
 
     </>
   )
