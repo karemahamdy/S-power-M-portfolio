@@ -9,15 +9,15 @@ import CarouselSize from "../../components/Swipper.jsx"
 function Home() {
   return (
     <>
-<CarouselSize/>
+
       <div className='bg'>
         <Nav />
         <Hero />
         </div>
-
       <div className='container-box grid gap-6'>
         <Intro />
         <hr></hr>
+        <CarouselSize/>
         <Clients />
         <hr></hr>
       </div>
