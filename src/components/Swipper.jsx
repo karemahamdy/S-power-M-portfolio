@@ -29,13 +29,10 @@ function CarouselSize() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
-              <div className="p-2">
-                <Card className="shadow-lg">
-                  <CardContent className="flex aspect-square items-center justify-center ">
+              
                     <img src={image} alt={`Slide ${index + 1}`} className="object-cover h-full w-full" />
-                  </CardContent>
-                </Card>
-              </div>
+              
+            
             </CarouselItem>
           ))}
         </CarouselContent>
