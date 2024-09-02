@@ -1,50 +1,50 @@
-import * as React from "react"
 
-import { cn } from "@/lib/utils"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
-const Card = React.forwardRef(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("rounded-lg border bg-card text-card-foreground shadow-sm", className)}
-    {...props} />
-))
-Card.displayName = "Card"
+function CarouselSize() {
+  const items = [
+    { image: "src/assets/images/Rectangle 44.png", text: "First Slide", description: "This is the first slide" },
+    {image: "src/assets/images/Rectangle 44.png", text: "Second Slide", description: "This is the second slide" },
+    { image: "src/assets/images/Rectangle 44.png", text: "Third Slide", description: "This is the third slide" },
+    { image: "src/assets/images/Rectangle 44.png", text: "Fourth Slide", description: "This is the fourth slide" },
+    { image: "src/assets/images/Rectangle 44.png", text: "Fifth Slide", description: "This is the fifth slide" },
+  ]
 
-const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
-    {...props} />
-))
-CardHeader.displayName = "CardHeader"
+  return (
+    <div className="flex justify-center items-center">
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        className="w-full max-w-2xl flex justify-center items-center"
+      >
+        <CarouselContent>
+          {items.map((item, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
+              <div className="p-2">
+                <Card className="shadow-lg">
+                  <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
+                    <img src={item.image} alt={`Slide ${index + 1}`} className="object-cover h-32 w-32 mb-4" />
+                    <span className="text-3xl font-semibold mb-2">{item.text}</span>
+                    <p className="text-center text-gray-600">{item.description}</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+    </div>
+  )
+}
 
-const CardTitle = React.forwardRef(({ className, ...props }, ref) => (
-  <h3
-    ref={ref}
-    className={cn("text-2xl font-semibold leading-none tracking-tight", className)}
-    {...props} />
-))
-CardTitle.displayName = "CardTitle"
-
-const CardDescription = React.forwardRef(({ className, ...props }, ref) => (
-  <p
-    ref={ref}
-    className={cn("text-sm text-muted-foreground", className)}
-    {...props} />
-))
-CardDescription.displayName = "CardDescription"
-
-const CardContent = React.forwardRef(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
-))
-CardContent.displayName = "CardContent"
-
-const CardFooter = React.forwardRef(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("flex items-center p-6 pt-0", className)}
-    {...props} />
-))
-CardFooter.displayName = "CardFooter"
-
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+export default CarouselSize

@@ -17,6 +17,7 @@ function Home() {
         </div>
       <div className='container-box grid gap-6'>
         <Intro />
+      
         <hr></hr>
         <Portfolio/>
         <hr></hr>

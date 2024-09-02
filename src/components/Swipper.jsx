@@ -1,6 +1,3 @@
-import * as React from "react"
-
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -29,10 +26,7 @@ function CarouselSize() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 xl:basis-1/3">
-              
-                    <img src={image} alt={`Slide ${index + 1}`} className="object-cover h-full w-full" />
-              
-            
+              <img src={image} alt={`Slide ${index + 1}`} className="object-cover h-full w-full" />
             </CarouselItem>
           ))}
         </CarouselContent>
